@@ -1,12 +1,12 @@
 print("Bem-vindo ao Adivinha o numero!")
-print("Se queres ser tu a adivinhar um número em que eu pensei, escreve modo2, se queres ser tu a pensar num número e ser eu a adivinhar, escreve modo1")
-answer = input("modo1 ou modo2?")
+print("se queres ser tu a pensar num número e ser eu a adivinhar, escreve 1. Se queres ser tu a adivinhar um número em que eu pensei, escreve 2")
+answer = input("1 ou 2?")
 
-while answer != "modo1" and answer != "modo2":
+while answer != "1" and answer != "2":
     print("resposta inválida")
-    answer = input("modo1 ou modo2?")
+    answer = input("1 ou 2?")
 
-if answer == "modo1":
+if answer == "1":
     import random
     numero_a_adivinhar = random.randrange(0, 101)
     tentativas = 0
@@ -23,7 +23,8 @@ if answer == "modo1":
             print("O número que pensei é Maior")
             guess = int(input("tenta outra vez"))
     print(f"Acertou o número em {tentativas} tentativas")
-elif answer == "modo2":
+
+elif answer == "2":
     tentativa1 = 1
     min = 0
     max = 100
@@ -32,19 +33,22 @@ elif answer == "modo2":
     print(f"O número é {(min + max)//2}?")
     resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
 
+    while resposta != "sim" and resposta != "maior" and resposta != "menor":
+            print("resposta inválida")
+            resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
     if resposta == "sim":
-        print(f"Let's go, acertei em 1 tentativa!")
+        print("Let's go, acertei em 1 tentativa!")
     while resposta == "menor" or resposta == "maior":
         tentativa1 = tentativa1 + 1
         if resposta == "maior":
             min = med + 1
-            print(f"o número escolhido é {(min + max)//2}?")
-            resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
+            med = (min + max)//2
         elif resposta  == "menor": 
             max = med - 1
-            print(f"o número escolhido é {(min + max)//2}?")
-            resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
-    while resposta != "sim" or resposta != "maior" or resposta != "menor":
-        print("resposta inválida")
+            med = (min + max)//2
+        print(f"o número escolhido é {a}?")
         resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
+        while resposta != "sim" and resposta != "maior" and resposta != "menor":
+            print("resposta inválida")
+            resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
     print (f"Let's go! Acertei em apenas {tentativa1} tentativas!")
