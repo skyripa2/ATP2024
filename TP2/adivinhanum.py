@@ -9,9 +9,10 @@ while answer != "modo1" and answer != "modo2":
 if answer == "modo1":
     import random
     numero_a_adivinhar = random.randrange(0, 101)
-    tentativas = 1
+    tentativas = 0
     guess = int(input("Tenta adivinhar o número de 0-100!"))
     if guess == numero_a_adivinhar:
+        tentativas = tentativas + 1
         print("Sim!")
     while guess != numero_a_adivinhar:
         tentativas = tentativas + 1
