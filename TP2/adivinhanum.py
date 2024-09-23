@@ -23,7 +23,7 @@ if answer == "modo1":
             print("O número que pensei é Maior")
             guess = int(input("tenta outra vez"))
     print(f"Acertou o número em {tentativas} tentativas")
-    elif answer == "modo2":
+elif answer == "modo2":
     tentativa1 = 1
     min = 0
     max = 100
