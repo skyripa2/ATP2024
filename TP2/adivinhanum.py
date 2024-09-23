@@ -46,7 +46,7 @@ elif answer == "2":
         elif resposta  == "menor": 
             max = med - 1
             med = (min + max)//2
-        print(f"o número escolhido é {a}?")
+        print(f"o número escolhido é {med}?")
         resposta = input("Se acertei diga sim, se o número escolhido for maior diga maior, se for menor diga menor")
         while resposta != "sim" and resposta != "maior" and resposta != "menor":
             print("resposta inválida")
