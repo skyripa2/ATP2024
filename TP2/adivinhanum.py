@@ -6,7 +6,7 @@ while answer != "1" and answer != "2":
     print("resposta inválida")
     answer = input("1 ou 2?")
 
-if answer == "1":
+if answer == "2":
     import random
     numero_a_adivinhar = random.randrange(0, 101)
     tentativas = 0
@@ -24,7 +24,7 @@ if answer == "1":
             guess = int(input("tenta outra vez"))
     print(f"Acertou o número em {tentativas} tentativas")
 
-elif answer == "2":
+elif answer == "1":
     tentativa1 = 1
     min = 0
     max = 100
