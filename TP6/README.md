@@ -13,4 +13,6 @@ Já o TPC desta semana consistiu numa aplicação que coloca no monitor o seguin
 - 9: Carregar uma turma dum ficheiro;
 - 0: Sair da aplicação.
 
-No final, tivemos de criar uma turma com 5 alunos.
+No final, tivemos de criar uma turma com 5 alunos. 
+
+Esse mesmo ficheiro encontra-se em anexo nesta pasta.
