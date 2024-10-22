@@ -1,0 +1,5 @@
+Vera Campos::a107235::14::15::16
+Afonso Queiroga::a107233::13::17::10
+Tiago Maia::a107203::17::18::15
+Dinis Pereira::a107199::19::20::16
+Daniela Faria::a107453::15::14::20
