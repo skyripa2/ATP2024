@@ -63,7 +63,7 @@ def listar_Keyw(fnome):
     dic={}
     for d in fnome:
         if 'keywords' in d:
-            for keyw in d['keywords'].split(", "):
+            for keyw in d['keywords'].split(", ")[:-1]:
                 if keyw in dic:
                     dic[keyw]=dic[keyw]+1
                 else:
@@ -214,7 +214,7 @@ def distrib_keyw_ano(fnome, ano):
         if 'publish_date' in pub:
             if pub['publish_date'].split('-')[0]==ano:
                 if 'keywords' in pub:
-                    for keyw in pub['keywords'].split(", ")[:-1]:
+                    for keyw in pub['keywords'].split(", "):
                         if keyw in dic:
                             dic[keyw]=dic[keyw]+1
                         else:
