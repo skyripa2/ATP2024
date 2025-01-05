@@ -7,8 +7,6 @@ def carregar_base_dados_arquivo(fnome):
     f.close()
     return ata
 
-data_set=carregar_base_dados_arquivo("ata_medica_papers.json")
-
 def listarAutor(fnome):#
     res =[]
     for d in fnome:
