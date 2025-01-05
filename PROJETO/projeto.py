@@ -63,7 +63,7 @@ def listar_Keyw(fnome):
     dic={}
     for d in fnome:
         if 'keywords' in d:
-            for keyw in d['keywords'].split(", ")[:-1]:
+            for keyw in d['keywords'].split(", "):
                 if keyw in dic:
                     dic[keyw]=dic[keyw]+1
                 else:
